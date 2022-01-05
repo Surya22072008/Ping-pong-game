@@ -19,14 +19,26 @@
             <div class="btn btn-primary heading">
         <h3>AI MARIO GAME</h3>
         <button class="btn btn_primary" data-toggle="model" data-target="#myModal">Instruction</button>
-          </div>
-          <img src="mario.jpg" class="big-image">
+            </div>
           <br><br>
           <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
           <br><br>
           <h3 id="status" class="btn btn-warning"></h3>
           <br><br>
           <div id="canvas"></div>
+          <button class="btn btn_warning" id="restart" onclick="restart()">Restart</button>
+          <div id="myModal" class="modal fade">
+            <div class="modal-dialog"></div>
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4>Instruction</h4>
+              </div>
+              <div class="modal-body">
+            
+              </div>
+            </div>
+          </div>
         </center>
         <script src="main.js"></script>
     </body>
